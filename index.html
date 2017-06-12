@@ -4,8 +4,35 @@
     <meta charset="utf-8">
     <title>GuitarShop</title>
 
+  <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="src/homepage.css">
+    <link type="text/css" rel="stylesheet" href="src/sidebar.css">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+                                <script type="text/javascript">
+                                $(document).ready(function () {
+                                  $(".sub > a").click(function() {
+                                    var ul = $(this).next(),
+                                        clone = ul.clone().css({"height":"auto"}).appendTo(".mini-menu"),
+                                        height = ul.css("height") === "0px" ? ul[0].scrollHeight + "px" : "0px";
+                                    clone.remove();
+                                    ul.animate({"height":height});
+                                    return false;
+                                  });
+                                       $('.mini-menu > ul > li > a').click(function(){
+                                     $('.mini-menu > ul > li > a, .sub a').removeClass('active');
+                                     $(this).addClass('active');
+                                  }),
+                                     $('.sub ul li a').click(function(){
+                                     $('.sub ul li a').removeClass('active');
+                                     $(this).addClass('active');
+                                  });
+                                });
+     </script>
+
   </head>
     <body>
         <div id="wrapper">
@@ -13,59 +40,109 @@
               <header id="header">
                 <h1>
                   <div class="btn-group" role="group" aria-label="...">
-
-                    <button type="button" class="btn btn-default ">
-                        <a href="#openModal">SIGN IN</a>
-                    </button>
-
-                    <button type="button" class="btn btn-default ">
-                        <a href="#openModal">REGISTRATION</a>
-                    </button>
-
-                    <button type="button" class="btn btn-default ">
-                        <a href="#openModal">SIGN OUT</a>
-                    </button>
-
+                    <button type="button" class="btn btn-default">SIGN IN</button>
+                    <button type="button" class="btn btn-default">SIGN OUT</button>
+                    <button type="button" class="btn btn-default">REGISTRATION</button>
                   </div>
                 </h1>
                 <img src="img/GuitarShop_960x440.jpg" alt="GuitarShop">
               </header>
-<!--==================== ROW_content ===========-->
+<!--==================== ROW_content =============-->
               <div id="tableContainer">
                 <div id="tableRow">
-
                     <div id="sidebar">
                             <h1 class="sidebar">MENU</h1>
+                            <div class="mini-menu">
+                                <ul>
 
-                            <div class="btn-group-vertical sidebar" role="group" aria-label="...">
-                              <button type="button" class="btn btn-default">Acustic guitar</button>
-                              <button type="button" class="btn btn-default">Electro guitar</button>
-                              <button type="button" class="btn btn-default">Amplifiers</button>
-                              <button type="button" class="btn btn-default">Combo amplifiers</button>
-                              <button type="button" class="btn btn-default">Dunlops</button>
-                              <button type="button" class="btn btn-default">Overdrivs</button>
-                              <button type="button" class="btn btn-default">Horus</button>
-                              <button type="button" class="btn btn-default">Preams</button>
-                              <button type="button" class="btn btn-default">Revebrators</button>
-                              <button type="button" class="btn btn-default">Strings</button>
+                                    <li class="sub">
+                                        <a href="#">ELECTRIC GUITARS</a>
+                                        <ul>
+                                           <li><a href="#">Gibson</a></li>
+                                           <li><a href="#">Fender</a></li>
+                                           <li><a href="#">Ibanez</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="sub">
+                                        <a href="#">ACUSTIC GUITARS</a>
+                                        <ul>
+                                           <li><a href="#">Gibson</a></li>
+                                           <li><a href="#">Yamaha</a></li>
+                                           <li><a href="#">Ibanez</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="sub">
+                                        <a href="#">COMBO AMPLIFIERS</a>
+                                        <ul>
+                                          <li><a href="#">Marshall</a></li>
+                                          <li><a href="#">Gibson</a></li>
+                                          <li><a href="#">Yamaha</a></li>
+                                          <li><a href="#">Ibanez</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub">
+                                        <a href="#">AMPLIFIERS</a>
+                                        <ul>
+                                          <li><a href="#">Gibson</a></li>
+                                          <li><a href="#">Roland</a></li>
+                                          <li><a href="#">Ibanez</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub">
+                                        <a href="#">OVERDRIVERS</a>
+                                        <ul>
+                                          <li><a href="#">Boss</a></li>
+                                          <li><a href="#">Ibanez</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub">
+                                        <a href="#">DUNLOPS</a>
+                                        <ul>
+                                          <li><a href="#">Cry Baby</a></li>
+                                          <li><a href="#">Ibanez</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub">
+                                        <a href="#">PREAMPS</a>
+                                        <ul>
+                                          <li><a href="#">Fender</a></li>
+                                          <li><a href="#">Ibanez</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub">
+                                        <a href="#">REVEBRATORS</a>
+                                        <ul>
+                                          <li><a href="#">Fender</a></li>
+                                          <li><a href="#">Ibanez</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub">
+                                        <a href="#">STRINGS</a>
+                                        <ul>
+                                          <li><a href="#">Gibson</a></li>
+                                          <li><a href="#">Boomer</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
                             </div>
                     </div>
-
                     <div id="content">
-                      <h1 class="sidebar">CONTENT</h1>
-                       <p>
-                         content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content
-                       </p>
+                          <h1 class="content">CONTENT</h1>
+                          <p>
+                            content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content
+                          </p>
                     </div>
-
-                  </div>
                 </div>
+             </div>
 
-<!--==================== footer =================-->
+<!--==================== footer ===================-->
               <footer id="footer">
-                  <p class="footer">Website was develop by The Trilobit of Programming </p>
+                  <p class="footer">Website was developed by The Trilobit of Programming </p>
               </footer>
-<!--=============================================-->
+<!--===============================================-->
         </div>
      </body>
 
