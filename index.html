@@ -3,47 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>GuitarShop</title>
-
-  <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+   <!-- ****************  for bootstarap ************************************************************* -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <!-- ****************  /for bootstarap ************************************************************ -->
+
+
+   <!-- ****************  my personal CSS ******** *************************************************** -->
     <link type="text/css" rel="stylesheet" href="src/homepage.css">
     <link type="text/css" rel="stylesheet" href="src/sidebar.css">
 
 
+   <!-- ****************  jscript for sidebar ******************************************************** -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+     <script src="src/sidebar.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-                                <script type="text/javascript">
-                                $(document).ready(function () {
-                                  $(".sub > a").click(function() {
-                                    var ul = $(this).next(),
-                                        clone = ul.clone().css({"height":"auto"}).appendTo(".mini-menu"),
-                                        height = ul.css("height") === "0px" ? ul[0].scrollHeight + "px" : "0px";
-                                    clone.remove();
-                                    ul.animate({"height":height});
-                                    return false;
-                                  });
-                                       $('.mini-menu > ul > li > a').click(function(){
-                                     $('.mini-menu > ul > li > a, .sub a').removeClass('active');
-                                     $(this).addClass('active');
-                                  }),
-                                     $('.sub ul li a').click(function(){
-                                     $('.sub ul li a').removeClass('active');
-                                     $(this).addClass('active');
-                                  });
-                                });
-     </script>
 
   </head>
     <body>
         <div id="wrapper">
 <!--==================== header ==================-->
               <header id="header">
-                <h1>
+                <h1 class="header">
+
+                  <!-- Trigger the modal with a button -->
                   <div class="btn-group" role="group" aria-label="...">
-                    <button type="button" class="btn btn-default">SIGN IN</button>
-                    <button type="button" class="btn btn-default">SIGN OUT</button>
-                    <button type="button" class="btn btn-default">REGISTRATION</button>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+                       SIGN IN
+                    </button>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModalReg">
+                       REGISTARTION
+                    </button>
                   </div>
+
                 </h1>
                 <img src="img/GuitarShop_960x440.jpg" alt="GuitarShop">
               </header>
@@ -138,12 +134,175 @@
                 </div>
              </div>
 
-<!--==================== footer ===================-->
+<!--==================== footer===============================================================================-->
               <footer id="footer">
                   <p class="footer">Website was developed by The Trilobit of Programming </p>
               </footer>
-<!--===============================================-->
+<!--==========================================================================================================-->
         </div>
      </body>
+
+<!-- *********************************   MODAL WINDOWS ***********************************************************/-->
+
+
+     <!-- Modal REGISTARATION-->
+     <div id="myModalReg" class="modal fade" role="dialog">
+       <div class="modal-dialog">
+          <div class="modal-content" style="width:500px; margin:auto;" >
+               <br><br>
+               <!-- Modal content-->
+               <form class="form-horizontal">
+               <fieldset>
+
+               <!-- Form Name -->
+               <legend style="text-align:center;">Please fill in registration form</legend>
+
+               <!-- Text input-->
+               <div class="form-group">
+                 <label class="col-md-4 control-label" for="name">Name</label>
+                 <div class="col-md-4">
+                 <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control input-md" required="">
+
+                 </div>
+               </div>
+
+               <!-- Text input-->
+               <div class="form-group">
+                 <label class="col-md-4 control-label" for="email">Email</label>
+                 <div class="col-md-4">
+                 <input id="email" name="email" type="text" placeholder="Enter your email id" class="form-control input-md" required="">
+
+                 </div>
+               </div>
+
+               <!-- Password input-->
+               <div class="form-group">
+                 <label class="col-md-4 control-label" for="password">Password</label>
+                 <div class="col-md-4">
+                   <input id="password" name="password" type="password" placeholder="Enter a password" class="form-control input-md" required="">
+
+                 </div>
+               </div>
+
+               <!-- Text input-->
+               <div class="form-group">
+                 <label class="col-md-4 control-label" for="contact">Contact no.</label>
+                 <div class="col-md-4">
+                 <input id="contact" name="contact" type="text" placeholder="Enter your contact no." class="form-control input-md" required="">
+
+                 </div>
+               </div>
+
+
+
+               <!-- Text input-->
+               <div class="form-group">
+                 <label class="col-md-4 control-label" for="street">Street</label>
+                 <div class="col-md-4">
+                 <input id="street" name="street" type="text" placeholder="Enter your street" class="form-control input-md" required="">
+
+                 </div>
+               </div>
+
+               <!-- Text input-->
+               <div class="form-group">
+                 <label class="col-md-4 control-label" for="area">Area</label>
+                 <div class="col-md-4">
+                 <input id="area" name="area" type="text" placeholder="Enter your area" class="form-control input-md" required="">
+
+                 </div>
+               </div>
+
+               <!-- Text input-->
+               <div class="form-group">
+                 <label class="col-md-4 control-label" for="city">City</label>
+                 <div class="col-md-4">
+                 <input id="city" name="city" type="text" placeholder="Enter your city" class="form-control input-md" required="">
+
+                 </div>
+               </div>
+
+               <!-- Text input-->
+               <div class="form-group">
+                 <label class="col-md-4 control-label" for="dist">District</label>
+                 <div class="col-md-4">
+                 <input id="dist" name="dist" type="text" placeholder="Enter your district" class="form-control input-md" required="">
+
+                 </div>
+               </div>
+
+               <!-- Button -->
+               <div class="form-group">
+                 <label class="col-md-4 control-label" for="signup"></label>
+                 <div class="col-md-4">
+                   <button id="signup" name="signup" class="btn btn-success">Sign Up</button>
+                 </div>
+               </div>
+
+               </fieldset>
+               </form>
+         </div>
+
+
+
+       </div>
+     </div>
+
+<!-- .............................................................................................................-->
+
+     <!-- Modal SIGN IN-->
+     <div id="myModal" class="modal fade" role="dialog">
+       <div class="modal-dialog">
+          <div class="modal-content" style="width:500px; margin:auto;" >
+               <br><br>
+               <!-- Modal content-->
+               <form class="form-horizontal">
+               <fieldset>
+
+               <!-- Form Login -->
+               <legend style="text-align:center;">Please type your personal data</legend>
+
+               <!-- Text input-->
+               <div class="form-group">
+                 <label class="col-md-4 control-label" for="username">Username</label>
+                 <div class="col-md-4">
+                 <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control input-md" required="">
+
+                 </div>
+               </div>
+
+               <!-- Form Password -->
+               <div class="form-group">
+                 <label class="col-md-4 control-label" for="password">Password</label>
+                 <div class="col-md-4">
+                 <input id="passwoed" name="password" type="password" placeholder="Enter your password" class="form-control input-md" required="">
+
+                 </div>
+               </div>
+
+
+
+               <!-- Button -->
+               <div class="form-group">
+                 <label class="col-md-4 control-label" for="signup"></label>
+                 <div class="col-md-4">
+                   <button id="signup" name="signup" class="btn btn-success">Sign Up</button>
+                 </div>
+               </div>
+
+               </fieldset>
+               </form>
+         </div>
+<!-- *********************************   /MODAL WINDOWS ***********************************************************/-->
+
+
+       </div>
+     </div>
+
+
+
+
+
+
 
 </html>
