@@ -17,12 +17,13 @@ img  {
 h1.header   {
   font-size: 20px;
   background: #0c3952;
+
   margin: 0px;
   padding: 8px;}
 
 
 h1.sidebar   {
-  width: 200px;
+  width: 100%;
   font-family: sans-serif;
   font-size: 20px;
   background: #0c3952;
@@ -31,6 +32,8 @@ h1.sidebar   {
   text-align: center;
   color: #FFF;
 }
+
+
 
 h1.content   {
   font-family: sans-serif;
@@ -89,28 +92,29 @@ p.footer  {
 
 #tableContainer {
   display: table;
-  border-spacing: 10px;
   height: 450px;
   width: 100%;
+  padding: 10px;
 }
 
-#tableRow {
-  display: table-row;
-}
+
+
+
 
 #sidebar {
-  display: table-cell;
+
   text-align: center;
-  width:200px;
+  width:100%;
   height: auto;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background:  #888;
   padding-bottom: 15px;
   border: 1px solid #0c3952;
-
-
+  margin-bottom: 10px;
  }
+
+
 
 #content {
   display: table-cell;
@@ -119,6 +123,7 @@ p.footer  {
   background: #FFF;
   padding-bottom: 15px;
   border: 1px solid #0c3952;
+
  }
 
 #footer {
@@ -128,3 +133,23 @@ p.footer  {
   padding: 5px 10px 5px 10px;
   clear: both;
   }
+
+
+
+
+   @media screen and (min-width: 410px) {
+     #sidebar {
+       width:200px;
+       display: table-cell;
+       margin-bottom: 0px;
+     }
+
+     #tableRow {
+       display: table-row;
+     }
+
+     #tableContainer {
+       border-spacing: 10px;
+       padding: 0px;
+     }
+   }
