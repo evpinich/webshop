@@ -61,6 +61,9 @@ button.button_header {
   border-radius: 5px;
 }
 
+button.order {
+
+}
 
 p  {
   padding: 0px;
@@ -78,6 +81,11 @@ p.footer  {
   text-align: center;
   font-style: italic;
 }
+
+form.form_for_order_without_registration{
+  margin: 10px;
+}
+
 
 
 #wrapper {
@@ -98,9 +106,6 @@ p.footer  {
 }
 
 
-
-
-
 #sidebar {
 
   text-align: center;
@@ -117,7 +122,7 @@ p.footer  {
 
 
 #content {
-  display: table-cell;
+  display:flow-root;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background: #FFF;
@@ -144,8 +149,11 @@ p.footer  {
        margin-bottom: 0px;
      }
 
+
+
      #tableRow {
        display: table-row;
+
      }
 
      #tableContainer {

@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>GuitarShop</title>
-   <!-- ****************  for bootstarap ************************************************************* -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-   <!-- ****************  /for bootstarap ************************************************************ -->
+<head>
+  <meta charset="utf-8">
+  <title>GuitarShop</title>
+  <!-- ****************  for bootstarap ************************************************************* -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- ****************  /for bootstarap ************************************************************ -->
+
+  <!-- ****************  jQuery ************************************************************* -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="jquery.cookie.js"></script>
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <!-- ****************  /jQuery ************************************************************* -->
+
+  <!-- ****************  my personal CSS ******** *************************************************** -->
+  <link type="text/css" rel="stylesheet" href="src/homepage.css">
+  <link type="text/css" rel="stylesheet" href="src/sidebar.css">
 
 
-   <!-- ****************  my personal CSS ******** *************************************************** -->
-    <link type="text/css" rel="stylesheet" href="src/homepage.css">
-    <link type="text/css" rel="stylesheet" href="src/sidebar.css">
+  <!-- ****************  jscript for sidebar ******************************************************** -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="src/sidebar.js"></script>
 
 
-   <!-- ****************  jscript for sidebar ******************************************************** -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-     <script type="text/javascript" src="src/sidebar.js"></script>
+</head>
 
 
-  </head>
-    <body>
-        <div id="wrapper">
-<!--==================== header ==================-->
-              <header id="header">
-                <h1 class="header">
+<body>
+  <div id="wrapper">
+    <!--==================== header ==================-->
+    <header id="header">
+      <h1 class="header">
 
                   <!-- Trigger the modal with a button -->
                   <div class="btn-group" role="group" aria-label="...">
@@ -41,263 +50,321 @@
                   </div>
 
                 </h1>
-                <img src="img/GuitarShop_960x440.jpg" alt="GuitarShop">
-              </header>
-<!--==================== ROW_content =============-->
-              <div id="tableContainer">
-                <div id="tableRow">
-                    <div id="sidebar">
-                            <h1 class="sidebar">MENU</h1>
-                            <div class="mini-menu">
-                                <ul>
+      <img src="img/GuitarShop_960x440.jpg" alt="GuitarShop">
+    </header>
+    <!--==================== ROW_content =============-->
+    <div id="tableContainer">
+      <div id="tableRow">
+        <div id="sidebar">
+          <h1 class="sidebar">MENU</h1>
+          <div class="mini-menu">
+            <ul>
 
-                                    <li class="sub">
-                                        <a href="#">ELECTRIC GUITARS</a>
-                                        <ul>
-                                           <li><a href="#">Gibson</a></li>
-                                           <li><a href="#">Fender</a></li>
-                                           <li><a href="#">Ibanez</a></li>
+              <li class="sub">
+                <a href="#">ELECTRIC GUITARS</a>
+                <ul>
+                  <li><a href="#">Gibson</a></li>
+                  <li><a href="#">Fender</a></li>
+                  <li><a href="#">Ibanez</a></li>
 
-                                        </ul>
-                                    </li>
-                                    <li class="sub">
-                                        <a href="#">ACUSTIC GUITARS</a>
-                                        <ul>
-                                           <li><a href="#">Gibson</a></li>
-                                           <li><a href="#">Yamaha</a></li>
-                                           <li><a href="#">Ibanez</a></li>
+                </ul>
+              </li>
+              <li class="sub">
+                <a href="#">ACUSTIC GUITARS</a>
+                <ul>
+                  <li><a href="#">Gibson</a></li>
+                  <li><a href="#">Yamaha</a></li>
+                  <li><a href="#">Ibanez</a></li>
 
-                                        </ul>
-                                    </li>
-                                    <li class="sub">
-                                        <a href="#">COMBO AMPLIFIERS</a>
-                                        <ul>
-                                          <li><a href="#">Marshall</a></li>
-                                          <li><a href="#">Gibson</a></li>
-                                          <li><a href="#">Yamaha</a></li>
-                                          <li><a href="#">Ibanez</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="sub">
-                                        <a href="#">AMPLIFIERS</a>
-                                        <ul>
-                                          <li><a href="#">Gibson</a></li>
-                                          <li><a href="#">Roland</a></li>
-                                          <li><a href="#">Ibanez</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="sub">
-                                        <a href="#">OVERDRIVERS</a>
-                                        <ul>
-                                          <li><a href="#">Boss</a></li>
-                                          <li><a href="#">Ibanez</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="sub">
-                                        <a href="#">DUNLOPS</a>
-                                        <ul>
-                                          <li><a href="#">Cry Baby</a></li>
-                                          <li><a href="#">Ibanez</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="sub">
-                                        <a href="#">PREAMPS</a>
-                                        <ul>
-                                          <li><a href="#">Fender</a></li>
-                                          <li><a href="#">Ibanez</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="sub">
-                                        <a href="#">REVEBRATORS</a>
-                                        <ul>
-                                          <li><a href="#">Fender</a></li>
-                                          <li><a href="#">Ibanez</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="sub">
-                                        <a href="#">STRINGS</a>
-                                        <ul>
-                                          <li><a href="#">Gibson</a></li>
-                                          <li><a href="#">Boomer</a></li>
-                                        </ul>
-                                    </li>
+                </ul>
+              </li>
+              <li class="sub">
+                <a href="#">COMBO AMPLIFIERS</a>
+                <ul>
+                  <li><a href="#">Marshall</a></li>
+                  <li><a href="#">Gibson</a></li>
+                  <li><a href="#">Yamaha</a></li>
+                  <li><a href="#">Ibanez</a></li>
+                </ul>
+              </li>
+              <li class="sub">
+                <a href="#">AMPLIFIERS</a>
+                <ul>
+                  <li><a href="#">Gibson</a></li>
+                  <li><a href="#">Roland</a></li>
+                  <li><a href="#">Ibanez</a></li>
+                </ul>
+              </li>
+              <li class="sub">
+                <a href="#">OVERDRIVERS</a>
+                <ul>
+                  <li><a href="#">Boss</a></li>
+                  <li><a href="#">Ibanez</a></li>
+                </ul>
+              </li>
+              <li class="sub">
+                <a href="#">DUNLOPS</a>
+                <ul>
+                  <li><a href="#">Cry Baby</a></li>
+                  <li><a href="#">Ibanez</a></li>
+                </ul>
+              </li>
+              <li class="sub">
+                <a href="#">PREAMPS</a>
+                <ul>
+                  <li><a href="#">Fender</a></li>
+                  <li><a href="#">Ibanez</a></li>
+                </ul>
+              </li>
+              <li class="sub">
+                <a href="#">REVEBRATORS</a>
+                <ul>
+                  <li><a href="#">Fender</a></li>
+                  <li><a href="#">Ibanez</a></li>
+                </ul>
+              </li>
+              <li class="sub">
+                <a href="#">STRINGS</a>
+                <ul>
+                  <li><a href="#">Gibson</a></li>
+                  <li><a href="#">Boomer</a></li>
+                </ul>
+              </li>
 
-                                </ul>
-                            </div>
-                    </div>
-                    <div id="content">
-                          <h1 class="content">CONTENT</h1>
-                          <p>
-                            content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content
-                          </p>
-                    </div>
-                </div>
-             </div>
-
-<!--==================== footer===============================================================================-->
-              <footer id="footer">
-                  <p class="footer">Website was developed by The Trilobit of Programming </p>
-              </footer>
-<!--==========================================================================================================-->
+            </ul>
+          </div>
         </div>
-     </body>
+        <div id="content">
+          <h1 class="content">CONTENT</h1>
+
+
+
+          <form class="form_for_order_without_registration">
+
+               <input id="first_name" name="first_name" type="text" placeholder="Enter your name" class="form-control input-md" required=""><br>
+               <input id="second_name" name="second_name" type="text" placeholder="Enter your second name" class="form-control input-md" required=""><br>
+               <button id="button_for_quick_order" name="q_order" class="btn btn-success">To make quick order  </button>
+
+
+               <script>
+
+                 $("#button_for_quick_order").click(
+                      function() {
+
+                var note_for_user=$("input[name='first_name']").val()+
+                         " "+
+                         $("input[name='second_name']").val()+
+                         ", вашы регистрационные данные внесены в систему";
+
+
+                 alert(note_for_user);
+
+                 $(".form_for_order_without_registration").hide(800);
+
+                 });
+
+
+
+               </script>
+
+          </form>
+
+          <p>
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+            content content content content content content content content content content content content content
+          </p>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!--==================== footer===============================================================================-->
+    <footer id="footer">
+      <p class="footer">Website was developed by The Trilobit of Programming </p>
+    </footer>
+    <!--==========================================================================================================-->
+  </div>
+</body>
 
 <!-- *********************************   MODAL WINDOWS ***********************************************************/-->
 
 
-     <!-- Modal REGISTARATION-->
-     <div id="myModalReg" class="modal fade" role="dialog">
-       <div class="modal-dialog">
-          <div class="modal-content" style="width:500px; margin:auto;" >
-               <br><br>
-               <!-- Modal content-->
-               <form class="form-horizontal">
-               <fieldset>
+<!-- Modal REGISTARATION-->
+<div id="myModalReg" class="modal fade" role="dialog"  >
+  <div class="modal-dialog" >
+    <div class="modal-content"  >
+      <br><br>
+      <!-- Modal content-->
+      <form class="form-horizontal" style="width:auto; padding:20px;">
+        <fieldset >
 
-               <!-- Form Name -->
-               <legend style="text-align:center;">Please fill in registration form</legend>
+          <!-- Form Name -->
+          <legend style="text-align:center;">Please fill in registration form</legend>
 
-               <!-- Text input-->
-               <div class="form-group">
-                 <label class="col-md-4 control-label" for="name">Name</label>
-                 <div class="col-md-4">
-                 <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control input-md" required="">
+          <!-- Text input-->
+          <div class="form-group" >
+            <label class="col-sm-4 control-label" for="name">Name</label>
+            <div class="col-sm-4">
+              <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control input-md" required="">
 
-                 </div>
-               </div>
+            </div>
+          </div>
 
-               <!-- Text input-->
-               <div class="form-group">
-                 <label class="col-md-4 control-label" for="email">Email</label>
-                 <div class="col-md-4">
-                 <input id="email" name="email" type="text" placeholder="Enter your email id" class="form-control input-md" required="">
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-4 control-label" for="email">Email</label>
+            <div class="col-sm-4">
+              <input id="email" name="email" type="text" placeholder="Enter your email id" class="form-control input-md" required="">
 
-                 </div>
-               </div>
+            </div>
+          </div>
 
-               <!-- Password input-->
-               <div class="form-group">
-                 <label class="col-md-4 control-label" for="password">Password</label>
-                 <div class="col-md-4">
-                   <input id="password" name="password" type="password" placeholder="Enter a password" class="form-control input-md" required="">
+          <!-- Password input-->
+          <div class="form-group">
+            <label class="col-sm-4 control-label" for="password">Password</label>
+            <div class="col-sm-4">
+              <input id="password" name="password" type="password" placeholder="Enter a password" class="form-control input-md" required="">
 
-                 </div>
-               </div>
+            </div>
+          </div>
 
-               <!-- Text input-->
-               <div class="form-group">
-                 <label class="col-md-4 control-label" for="contact">Contact no.</label>
-                 <div class="col-md-4">
-                 <input id="contact" name="contact" type="text" placeholder="Enter your contact no." class="form-control input-md" required="">
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-4 control-label" for="contact">Contact no.</label>
+            <div class="col-sm-4">
+              <input id="contact" name="contact" type="text" placeholder="Enter your contact no." class="form-control input-md" required="">
 
-                 </div>
-               </div>
-
-
-
-               <!-- Text input-->
-               <div class="form-group">
-                 <label class="col-md-4 control-label" for="street">Street</label>
-                 <div class="col-md-4">
-                 <input id="street" name="street" type="text" placeholder="Enter your street" class="form-control input-md" required="">
-
-                 </div>
-               </div>
-
-               <!-- Text input-->
-               <div class="form-group">
-                 <label class="col-md-4 control-label" for="area">Area</label>
-                 <div class="col-md-4">
-                 <input id="area" name="area" type="text" placeholder="Enter your area" class="form-control input-md" required="">
-
-                 </div>
-               </div>
-
-               <!-- Text input-->
-               <div class="form-group">
-                 <label class="col-md-4 control-label" for="city">City</label>
-                 <div class="col-md-4">
-                 <input id="city" name="city" type="text" placeholder="Enter your city" class="form-control input-md" required="">
-
-                 </div>
-               </div>
-
-               <!-- Text input-->
-               <div class="form-group">
-                 <label class="col-md-4 control-label" for="dist">District</label>
-                 <div class="col-md-4">
-                 <input id="dist" name="dist" type="text" placeholder="Enter your district" class="form-control input-md" required="">
-
-                 </div>
-               </div>
-
-               <!-- Button -->
-               <div class="form-group">
-                 <label class="col-md-4 control-label" for="signup"></label>
-                 <div class="col-md-4">
-                   <button id="signup" name="signup" class="btn btn-success">Sign Up</button>
-                 </div>
-               </div>
-
-               </fieldset>
-               </form>
-         </div>
+            </div>
+          </div>
 
 
 
-       </div>
-     </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-4 control-label" for="street">Street</label>
+            <div class="col-sm-4">
+              <input id="street" name="street" type="text" placeholder="Enter your street" class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-4 control-label" for="area">Area</label>
+            <div class="col-sm-4">
+              <input id="area" name="area" type="text" placeholder="Enter your area" class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-4 control-label" for="city">City</label>
+            <div class="col-sm-4">
+              <input id="city" name="city" type="text" placeholder="Enter your city" class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-4 control-label" for="dist">District</label>
+            <div class="col-sm-4">
+              <input id="dist" name="dist" type="text" placeholder="Enter your district" class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-sm-4 control-label" for="signup"></label>
+            <div class="col-sm-4">
+              <button id="signup" name="signup" class="btn btn-success">Sign Up</button>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+
+
+
+  </div>
+</div>
 
 <!-- .............................................................................................................-->
 
-     <!-- Modal SIGN IN-->
-     <div id="myModal" class="modal fade" role="dialog">
-       <div class="modal-dialog">
-          <div class="modal-content" style="width:500px; margin:auto;" >
-               <br><br>
-               <!-- Modal content-->
-               <form class="form-horizontal">
-               <fieldset>
+<!-- Modal SIGN IN-->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width:auto; padding:20px;">
+      <br><br>
+      <!-- Modal content-->
+      <form class="form-horizontal" >
+        <fieldset>
 
-               <!-- Form Login -->
-               <legend style="text-align:center;">Please type your personal data</legend>
+          <!-- Form Login -->
+          <legend style="text-align:center;">Please type your personal data</legend>
 
-               <!-- Text input-->
-               <div class="form-group">
-                 <label class="col-md-4 control-label" for="username">Username</label>
-                 <div class="col-md-4">
-                 <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control input-md" required="">
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-4 control-label" for="username">Username</label>
+            <div class="col-sm-4">
+              <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control input-md" required="">
 
-                 </div>
-               </div>
+            </div>
+          </div>
 
-               <!-- Form Password -->
-               <div class="form-group">
-                 <label class="col-md-4 control-label" for="password">Password</label>
-                 <div class="col-md-4">
-                 <input id="passwoed" name="password" type="password" placeholder="Enter your password" class="form-control input-md" required="">
+          <!-- Form Password -->
+          <div class="form-group">
+            <label class="col-sm-4 control-label" for="password">Password</label>
+            <div class="col-sm-3">
+              <input id="passwoed" name="password" type="password" placeholder="Enter your password" class="form-control input-md" required="">
 
-                 </div>
-               </div>
-
-
-
-               <!-- Button -->
-               <div class="form-group">
-                 <label class="col-md-4 control-label" for="signup"></label>
-                 <div class="col-md-4">
-                   <button id="signup" name="signup" class="btn btn-success">Sign Up</button>
-                 </div>
-               </div>
-
-               </fieldset>
-               </form>
-         </div>
-<!-- *********************************   /MODAL WINDOWS ***********************************************************/-->
+            </div>
+          </div>
 
 
-       </div>
-     </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-sm-4 control-label" for="signup"></label>
+            <div class="col-sm-4">
+              <button id="signup" name="signup" class="btn btn-success">Sign Up</button>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+    <!-- *********************************   /MODAL WINDOWS ***********************************************************/-->
+
+
+  </div>
+</div>
 
 
 
