@@ -133,24 +133,34 @@
           <h1 class="content">CONTENT</h1>
 
 
+              <form class="form_for_order_without_registration">
+                <legend style="text-align:center;">For quick order we can use this form</legend>
+                 <div class="form-group has-feedback nameBlock">
+                    <input type="text" name="first_name" class="form-control" id="first_name"
+                    placeholder="Enter your first name" aria-describedby="inputSuccess2Status">
+                </div>
 
-          <form class="form_for_order_without_registration">
-               <legend style="text-align:center;">For quick order we can use this form</legend>
+                 <div class="form-group has-feedback secondNameBlock">
+                    <input type="text" name="second_name" class="form-control" id="second_name"
+                    placeholder="Enter your second name" aria-describedby="inputSuccess2Status">
+                </div>
 
-               <input id="first_name" name="first_name" type="text" placeholder="Enter your name" class="form-control input-md" required="">
-               <br>
-               <input id="second_name" name="second_name" type="text" placeholder="Enter your second name" class="form-control input-md" required="">
-               <br>
-               <input id="e-mail" name="e-mail" type="text" placeholder="Enter your e-mail adrress" class="form-control input-md" required="">
-               <br>
-              <input id="adrress" name="adrress" type="text" placeholder="Enter your home adrress" class="form-control input-md" required="">
-              <br>
-              <button id="button_for_quick_order" name="q_order" class="btn btn-success">To make quick order  </button>
+                <div class="form-group has-feedback mailBlock">
+                   <input type="text" name="e-mail" class="form-control" id="e-mail"
+                   placeholder="Enter your email" aria-describedby="inputSuccess2Status">
+                </div>
+
+                <div class="form-group has-feedback adrressBlock">
+                   <input type="text" name="adrress" class="form-control" id="adrress"
+                   placeholder="Enter your adrress" aria-describedby="inputSuccess2Status">
+                </div>
+
+                 <button id="button_for_quick_order" class="btn btn-success" type="submit">To make quick order  </button>
+
+                 <script type="text/javascript" src="src/quick-reg-form-controller.js"></script>
+              </form>
 
 
-          <script type="text/javascript" src="src/quick-reg-form-controller.js"></script>
-
-          </form>
 
           <p>
             content content content content content content content content content content content content content
